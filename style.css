@@ -1,0 +1,81 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 30px;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2#timer {
+    font-size: 32px;
+    color: #ff5733;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div {
+    margin-top: 30px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin: 10px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+input[type="radio"]:not(:checked) + label {
+    color: #333;
+}
+
+label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Style for question container */
+div p {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
